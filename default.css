@@ -1,7 +1,7 @@
 /*base*/
 :root {
     --mainColor: #eaeaea;
-    --secondary-color: #fff;
+    --secondaryColor: #fff;
 
     --borderColor: #c1c1c1;
 
@@ -29,7 +29,8 @@ body {
 /*typography*/
 h1, h2, h3, h4, h5, h6, strong {
     font-family: 'Russo One', sans-serif;
-    color: var(--mainText)
+    color: var(--mainText);
+    font-weight: 500;
 }
 
 p, li, span, label, input, textarea {
@@ -97,9 +98,39 @@ section {
     background-color: var(--mainColor);
 }
 
+.greeting-wrapper {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 4rem;
+}
+
+.intro-wrapper {
+    background-color: var(--secondaryColor);
+    border: .1rem solid var(--borderColor);
+    box-shadow: rgba(99, 99, 99, 0.2) 0 .2rem .8rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4rem 36rem;
+    grid-template-areas: 'nav-wrapper nav-wrapper' 'left-column right-column';
+}
+
+.nav-wrapper {
+    grid-area: nav-wrapper;
+}
+
+.left-column {
+    grid-area: left-column;
+}
+
+.right-column {
+    grid-area: right-column;
+}
+
 /*about-section*/
 .about-section {
-    background-color: var(--secondary-color);
+    background-color: var(--secondaryColor);
 }
 
 /*portfolio-section*/
@@ -109,5 +140,5 @@ section {
 
 /*contact-section*/
 .contact-section {
-    background-color: var(--secondary-color);
+    background-color: var(--secondaryColor);
 }
