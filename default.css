@@ -109,7 +109,7 @@ section {
     background-color: var(--secondaryColor);
     border: .1rem solid var(--borderColor);
     box-shadow: rgba(99, 99, 99, 0.2) 0 .2rem .8rem 0;
-
+    border-radius: .5rem .5rem 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4rem 36rem;
@@ -118,6 +118,58 @@ section {
 
 .nav-wrapper {
     grid-area: nav-wrapper;
+    border-bottom: .1rem solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+    border-radius: .5rem .5rem 0 0;
+}
+
+.dots-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.browser-dot {
+    background-color: black;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 .7rem 2.9rem 0;
+}
+
+.browser-dot:hover {
+    cursor: pointer;
+}
+
+#dot-1 {
+    background-color: #fc6058;
+}
+
+#dot-2 {
+    background-color: #fec02f;
+}
+
+#dot-3 {
+    background-color: #2aca3e;
+}
+
+#navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+#navigation li a {
+    padding: 1rem;
+    color: var(--secondaryText);
 }
 
 .left-column {
