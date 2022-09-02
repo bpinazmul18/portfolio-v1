@@ -2,12 +2,12 @@
 :root {
     --mainColor: #eaeaea;
     --secondaryColor: #fff;
-
     --borderColor: #c1c1c1;
-
     --mainText: black;
     --secondaryText: blue;
     --themeDotColor: #24292e;
+    --previewBg: rgb(251, 249, 243, 0.8);
+    --previewShadow: #f0ead6;
 }
 
 * {
@@ -32,11 +32,14 @@ h1, h2, h3, h4, h5, h6, strong {
     font-family: 'Russo One', sans-serif;
     color: var(--mainText);
     font-weight: 500;
+    margin: 1.6rem 0;
 }
 
 p, li, span, label, input, textarea {
     font-family: 'Roboto Mono', monospace;
-    color: var(--secondaryText)
+    color: var(--secondaryText);
+    margin: 1.6rem 0;
+    line-height: 2.2rem;
 }
 
 h1 {
@@ -113,7 +116,7 @@ section {
     border-radius: .5rem .5rem 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4rem 45rem;
+    grid-template-rows: 4rem 49rem;
     grid-template-areas: 'nav-wrapper nav-wrapper' 'left-column right-column';
 }
 
@@ -205,7 +208,6 @@ section {
     box-shadow: rgba(0, 0, 0, 0.24) 0 .3rem .8rem;
     border: .2rem solid var(--secondaryColor);
     transition: .3s all ease;
-    margin: 2rem 0;
 }
 
 .theme-dot:hover {
@@ -237,7 +239,57 @@ section {
 
 .right-column {
     grid-area: right-column;
+    display: grid;
+    align-content: center;
+    padding: 5rem 0;
 }
+
+#preview-shadow {
+    background-color: var(--previewShadow);
+    width: 30rem;
+    height: 18rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+#preview {
+    width: 30rem;
+    border: .15rem solid #17a2b8;
+    background-color: var(--previewBg);
+    padding: 1.5rem;
+    position: relative;
+}
+
+.corner {
+    width: .7rem;
+    height: .7rem;
+    border: .15rem solid #17a2b8;
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+    position: absolute;
+}
+
+#corner-tl {
+    top: -0.5rem;
+    left: -0.5rem;
+}
+
+#corner-tr {
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
+#corner-bl {
+    bottom: -0.5rem;
+    left: -0.5rem;
+}
+
+#corner-br {
+    bottom: -0.5rem;
+    right: -0.5rem;
+}
+
+
 
 /*about-section*/
 .about-section {
@@ -252,4 +304,17 @@ section {
 /*contact-section*/
 .contact-section {
     background-color: var(--secondaryColor);
+}
+
+
+/* responsive */
+@media only screen and (max-width: 800px) {
+    .intro-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'nav-wrapper' 'left-column' 'right-column';
+    }
+
+    .right-column {
+        justify-content: center;
+    }
 }
