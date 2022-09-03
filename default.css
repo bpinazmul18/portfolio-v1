@@ -344,6 +344,31 @@ section {
 /*portfolio-section*/
 .portfolio-section {
     background-color: var(--mainColor);
+    padding: 5rem 0;
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 32rem);
+    gap: 2rem;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+}
+
+.project-wrapper {
+    border: .1rem solid var(--borderColor);
+    box-shadow: rgba(0, 0, 0, 0.24) 0 .3rem .8rem;
+}
+.project-info {
+    padding: 0 1.6rem;
+}
+.thumbnail {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 23rem;
+    object-fit: cover;
+
 }
 
 /*contact-section*/
