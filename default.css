@@ -4,9 +4,9 @@
     --secondaryColor: #fff;
     --borderColor: #c1c1c1;
     --mainText: black;
-    --secondaryText: blue;
+    --secondaryText: #17a2b8;
     --themeDotColor: #24292e;
-    --previewBg: rgb(251, 249, 243, 0.8);
+    --previewBg: rgba(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
 }
 
@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6, strong {
     margin: 1.6rem 0;
 }
 
-p, li, span, label, input, textarea {
+a, p, li, span, label, input, textarea {
     font-family: 'Roboto Mono', monospace;
     color: var(--secondaryText);
     margin: 1.6rem 0;
@@ -294,6 +294,51 @@ section {
 /*about-section*/
 .about-section {
     background-color: var(--secondaryColor);
+    padding: 5rem 0;
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 10rem;
+}
+
+.download-btn {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: var(--secondaryColor);
+    background-color: var(--themeDotColor);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .6rem;
+    border-radius: .4rem;
+}
+
+.skills {
+    background-color: var(--previewShadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.skills ul li {
+    margin: 1rem 0;
+}
+
+.social-links {
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+#village-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: cover;
+    border: .3rem solid var(--borderColor);
 }
 
 /*portfolio-section*/
