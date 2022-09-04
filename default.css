@@ -405,6 +405,7 @@ section {
 .project-intro {
     color: #4b5156;
     font-size: 1.4rem;
+    text-align: justify;
 }
 
 /*contact-section*/
