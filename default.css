@@ -92,6 +92,27 @@ ul {
     padding-right: 1.5rem;
 }
 
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    color: #212529;
+    background-color: var(--secondaryColor);
+    border: .1rem solid var(--borderColor);
+    padding: 1rem;
+    border-radius: .3rem;
+    width: 100%;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 .7rem 2.9rem 0;
+}
+
 /*section*/
 section {
     border-bottom: .1rem solid var(--borderColor);
@@ -392,12 +413,26 @@ section {
     padding: 5rem 0;
 }
 
+.contact-form {
+    max-width: 65rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    background-color: var(--mainColor);
+    border-radius: .4rem;
+}
+
+.contact-wrapper .section-title {
+    margin-bottom: 5rem;
+}
+
 .btn {
     width: 100%;
     color: #fff;
     background-color: var(--btnColor);
     border: none;
     padding: 1rem 0;
+    border-radius: .4rem;
 }
 
 
