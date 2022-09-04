@@ -8,6 +8,7 @@
     --themeDotColor: #24292e;
     --previewBg: rgba(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
+    --btnColor: black;
 }
 
 * {
@@ -388,7 +389,17 @@ section {
 /*contact-section*/
 .contact-section {
     background-color: var(--secondaryColor);
+    padding: 5rem 0;
 }
+
+.btn {
+    width: 100%;
+    color: #fff;
+    background-color: var(--btnColor);
+    border: none;
+}
+
+
 
 
 /* responsive */
