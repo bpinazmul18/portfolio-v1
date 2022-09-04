@@ -346,12 +346,16 @@ section {
     background-color: var(--mainColor);
     padding: 5rem 0;
 }
-
+.section-title {
+    text-align: center;
+    margin: 0;
+}
 .projects-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, 32rem);
     gap: 2rem;
     justify-content: center;
+    padding-top: 5rem;
 }
 
 .project-wrapper {
@@ -359,16 +363,26 @@ section {
     box-shadow: rgba(0, 0, 0, 0.24) 0 .3rem .8rem;
     background-color: var(--secondaryColor);
 }
-.project-info {
-    padding: 0 1.6rem;
-}
 .thumbnail {
     display: block;
     width: 100%;
     height: 100%;
     min-height: 23rem;
     /*object-fit: cover;*/
+}
 
+.project-info {
+    padding: 1.6rem;
+}
+
+.project-title {
+    color: var(--mainText);
+    margin-top: 0;
+}
+
+.project-intro {
+    color: #4b5156;
+    font-size: 1.4rem;
 }
 
 /*contact-section*/
