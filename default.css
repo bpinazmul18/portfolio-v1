@@ -397,6 +397,7 @@ section {
     color: #fff;
     background-color: var(--btnColor);
     border: none;
+    padding: 1rem 0;
 }
 
 
