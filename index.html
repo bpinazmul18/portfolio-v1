@@ -14,7 +14,7 @@
     <!--styles-->
     <link rel="stylesheet" href="./default.css">
 
-    <link id="theme-style" rel="stylesheet" href="./purple.css">
+    <link id="theme-style" rel="stylesheet" href="">
 </head>
 <body>
 <!--features-section-->
@@ -44,10 +44,10 @@
                     <h5 style="text-align: center;">Personalize Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="setting-note">*Theme settings will be saved for <br>your next visite!</p>
@@ -209,5 +209,7 @@
 </section>
 
 
+<!-- script area -->
+<script src="./script.js" type="text/javascript"></script>
 </body>
 </html>
