@@ -26,6 +26,7 @@ body {
     text-rendering: optimizeLegibility;
     font-size: 1.4rem;
     line-height: 1.6rem;
+    background-color: var(--mainColor);
 }
 
 /*typography*/
@@ -117,12 +118,13 @@ ul {
 section {
     border-bottom: .1rem solid var(--borderColor);
     overflow: auto;
+    /* background-color: var(--mainColor); */
 }
 
 /*features-section*/
-.features-section {
+/* .features-section {
     background-color: var(--mainColor);
-}
+} */
 
 .greeting-wrapper {
     display: grid;
@@ -132,7 +134,7 @@ section {
 }
 
 .intro-wrapper {
-    background-color: var(--secondaryColor);
+    background-color: var(--mainColor);
     border: .1rem solid var(--borderColor);
     box-shadow: rgba(99, 99, 99, 0.2) 0 .2rem .8rem 0;
     border-radius: .5rem .5rem 0 0;
@@ -315,7 +317,7 @@ section {
 
 /*about-section*/
 .about-section {
-    background-color: var(--secondaryColor);
+    /* background-color: var(--secondaryColor); */
     padding: 5rem 0;
 }
 
@@ -329,7 +331,7 @@ section {
     font-size: 1.6rem;
     line-height: 2rem;
     font-weight: 500;
-    color: var(--secondaryColor);
+    color: var(--mainColor);
     background-color: var(--themeDotColor);
     margin-top: 1rem;
     display: inline-block;
@@ -365,7 +367,7 @@ section {
 
 /*portfolio-section*/
 .portfolio-section {
-    background-color: var(--mainColor);
+    /* background-color: var(--mainColor); */
     padding: 5rem 0;
 }
 .section-title {
@@ -383,7 +385,7 @@ section {
 .project-wrapper {
     border: .1rem solid var(--borderColor);
     box-shadow: rgba(0, 0, 0, 0.24) 0 .3rem .8rem;
-    background-color: var(--secondaryColor);
+    background-color: var(--mainColor);
 }
 .thumbnail {
     display: block;
@@ -403,14 +405,14 @@ section {
 }
 
 .project-intro {
-    color: #4b5156;
+    color: var(--mainText);
     font-size: 1.4rem;
     text-align: justify;
 }
 
 /*contact-section*/
 .contact-section {
-    background-color: var(--secondaryColor);
+    /* background-color: var(--secondaryColor); */
     padding: 5rem 0;
 }
 

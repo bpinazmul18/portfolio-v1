@@ -1,0 +1,12 @@
+/*base*/
+:root {
+    --mainColor: #15202b;
+    --secondaryColor: #fff;
+    --borderColor: #164d56;
+    --mainText: #fff;
+    --secondaryText: #eee;
+    --themeDotColor: #fff;
+    --previewBg: rgba(25, 29, 52, 0.8);
+    --previewShadow: #111921;
+    --btnColor: #17a2b8;
+}
