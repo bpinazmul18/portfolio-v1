@@ -197,7 +197,7 @@ section {
 
 #navigation li a {
     padding: 1rem;
-    color: var(--secondaryText);
+    color: var(--mainText);
 }
 
 .left-column {
